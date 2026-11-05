@@ -4,56 +4,148 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>ZZ Test brand (brand test)</title>
+<title>TR04 Aero+ 1-Piece | ZZ Test Co</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+  :root{--bg:#0a0a0c;--bg2:#121215;--line:#25262b;--ink:#f1f1f3;--mut:#8d9099;--gold:#c4a747}
   *{box-sizing:border-box}
-  body{margin:0;font-family:Helvetica,Arial,sans-serif;color:#1c1f2a;background:#f4f5f7}
-  header{background:#15171d;color:#fff;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
-  header b{font-size:18px;letter-spacing:.04em}
-  header a{color:#aab0bd;font-size:14px;text-decoration:none}
-  .hero{max-width:900px;margin:0 auto;padding:56px 20px 24px}
-  h1{font-weight:300;font-size:44px;letter-spacing:.02em;margin:0 0 12px}
-  p{line-height:1.55;color:#555;margin:0 0 20px}
-  .test{max-width:900px;margin:0 auto 40px;padding:0 20px}
-  .box{background:#fff;border:1px solid #dfe2e8;border-radius:14px;padding:18px 20px}
-  .box h2{font-size:15px;margin:0 0 10px}
-  .box ol{margin:0 0 14px;padding-left:20px;line-height:1.7;color:#444;font-size:14px}
-  .box small{color:#777}
-  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-  .reset{border:1px solid #c9ced8;background:#fff;border-radius:999px;padding:9px 16px;font-size:14px;cursor:pointer}
-  .reset:hover{background:#f0f2f6}
-  #vid{font-family:Consolas,monospace;font-size:12px;color:#777}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Space Grotesk',Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;z-index:20;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;gap:36px;height:72px}
+  .logo{font-weight:700;letter-spacing:.32em;font-size:15px;text-transform:uppercase}
+  nav{display:flex;gap:28px;font-size:14px;color:#b4b7be}
+  nav a:hover{color:#fff}
+  .sp{flex:1}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 28px;border-radius:2px;border:1px solid #fff;background:#fff;color:#0a0a0c;font:600 13px 'Space Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:all .18s}
+  .btn:hover{background:transparent;color:#fff}
+  .btn.sm{height:42px;padding:0 20px;font-size:12px}
+  .btn.out{background:transparent;color:#fff;border-color:#4a4c54}
+  .btn.out:hover{border-color:#fff}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;min-height:calc(100vh - 72px);max-height:820px;padding-top:40px;padding-bottom:40px}
+  .tag{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+  h1{font-size:74px;line-height:.98;font-weight:600;letter-spacing:-.02em;margin:18px 0 14px}
+  h1 em{font-style:normal;color:#6e717a;font-weight:500}
+  .lead{font-size:18px;line-height:1.6;color:#a2a5ad;max-width:440px;margin:0 0 30px}
+  .fin{margin:0 0 30px}
+  .fin label{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
+  .sw{display:flex;gap:12px;align-items:center}
+  .sw button{width:34px;height:34px;border-radius:50%;border:2px solid transparent;outline:1px solid #3a3c43;outline-offset:3px;cursor:pointer;padding:0}
+  .sw button.on{outline:2px solid #fff}
+  .fn{margin-left:8px;font-size:15px;color:#fff}
+  .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .stage{background:radial-gradient(ellipse at 50% 40%,#f5f5f6 0%,#dcdde0 100%);border-radius:6px;aspect-ratio:1/1;display:grid;place-items:center;overflow:hidden}
+  .stage img{width:92%;height:92%;object-fit:contain;mix-blend-mode:multiply}
+  .band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
+  .band .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .band .wrap>div{padding:30px 0 30px 24px;border-right:1px solid var(--line)}
+  .band .wrap>div:first-child{padding-left:0}
+  .band .wrap>div:last-child{border-right:0}
+  .band small{display:block;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+  .band b{font-size:20px;font-weight:500}
+  section{padding:96px 0}
+  h2{font-size:44px;font-weight:600;letter-spacing:-.02em;margin:0 0 36px}
+  .fins{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .fc{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--bg2)}
+  .fc i{display:block;aspect-ratio:4/3}
+  .fc p{margin:0;padding:16px 18px;font-size:15px}
+  .how{background:var(--bg2);border-top:1px solid var(--line)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+  .step{padding:34px 30px;border-right:1px solid var(--line)}
+  .step:last-child{border-right:0}
+  .step span{font-size:13px;letter-spacing:.2em;color:var(--gold)}
+  .step h3{font-size:26px;font-weight:500;margin:14px 0 8px}
+  .step p{margin:0;color:var(--mut);line-height:1.55}
+  .last{text-align:center}
+  .last h2{font-size:54px}
+  .last p{color:#a2a5ad;margin:0 auto 30px;max-width:420px;line-height:1.6}
+  footer{border-top:1px solid var(--line);padding:34px 0;font-size:13px;color:var(--mut)}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .tt{position:fixed;left:14px;bottom:14px;z-index:30;font:12px 'Space Grotesk',sans-serif}
+  .tt button{border:1px solid #3a3c43;background:#17181c;color:#b4b7be;border-radius:999px;padding:7px 12px;cursor:pointer;font:12px 'Space Grotesk',sans-serif}
+  .tt div{display:none;margin-bottom:8px;background:#17181c;border:1px solid #3a3c43;border-radius:12px;padding:12px;width:230px;color:#b4b7be;line-height:1.5}
+  .tt.open div{display:block}
+  .tt code{font-size:11px;color:#8d9099}
+  @media(max-width:980px){h1{font-size:56px}.fins{grid-template-columns:repeat(2,1fr)}.band .wrap{grid-template-columns:repeat(2,1fr)}.band .wrap>div:nth-child(2){border-right:0}.band .wrap>div:nth-child(3){padding-left:0}}
+  @media(max-width:760px){
+    nav{display:none}
+    header .wrap{height:60px;gap:12px}
+    .hero .wrap{grid-template-columns:1fr;min-height:0;max-height:none;gap:26px;padding-top:24px;padding-bottom:44px}
+    .stage{order:-1}
+    h1{font-size:46px}.lead{font-size:16px}
+    section{padding:56px 0}
+    h2{font-size:34px}.last h2{font-size:38px}
+    .steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}
+    .logo{font-size:13px;letter-spacing:.24em}
+  }
 </style>
 </head>
 <body>
-<header><b>ZZ TEST CO</b><a href="index.html">All test pages</a></header>
-<section class="hero">
-  <h1>Brixton Forged TR04 Aero+</h1>
-  <p>Brand embed (code 614). One wheel, a few finishes. The visitor uploads a photo and picks a finish.</p>
-  <button class="avacar-preview" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU"></button>
-</section>
-<section class="test">
-  <div class="box">
-    <h2>What to try</h2>
-    <ol>
-      <li>Open the button, upload <b>test-car.jpg</b> (in this folder) or your own car photo.</li>
-      <li>Pick a finish at the bottom, press Render.</li>
-      <li>Press Request quote. It goes to a test inbox, so use any name and email.</li>
-      <li>Keep rendering until you reach the limit (5 per device).</li>
-    </ol>
-    <div class="row">
-      <button class="reset" id="reset">Start as a new visitor</button>
-      <span id="vid"></span>
+<header><div class="wrap">
+  <a class="logo" href="#top">ZZ Test Co</a>
+  <nav><a href="#top">Wheels</a><a href="#finishes">Finishes</a><a href="#how">Fitment</a><a href="#top">Dealers</a><a href="#top">Support</a></nav>
+  <div class="sp"></div>
+  <button class="avacar-preview btn sm" data-styled="false" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU">See it on your car</button>
+</div></header>
+
+<div id="top" class="hero"><div class="wrap">
+  <div>
+    <div class="tag">Forged monoblock</div>
+    <h1>TR04<br><em>Aero+ 1-Piece</em></h1>
+    <p class="lead">Five spokes, forged in one piece. See it on your own car before you order.</p>
+    <div class="cta">
+      <button class="avacar-preview btn" data-styled="false" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU">See it on your car</button>
+      <a class="btn out" href="#finishes">All finishes</a>
     </div>
-    <p><small>Every render is a real render. This is our own test brand, so it is never refused for billing. This page talks to staging, never to the live site.</small></p>
   </div>
-</section>
+  <div class="stage"><img src="tr04.png" alt="TR04 Aero+ 1-Piece wheel"></div>
+</div></div>
+
+<div class="band"><div class="wrap">
+  <div><small>Build</small><b>One-piece forged</b></div>
+  <div><small>Design</small><b>5 spoke</b></div>
+  <div><small>Finishes</small><b>4</b></div>
+  <div><small>Made</small><b>To order</b></div>
+</div></div>
+
+<section id="finishes"><div class="wrap">
+  <h2>Four finishes</h2>
+  <div class="fins">
+    <div class="fc"><i style="background:linear-gradient(135deg,#d9bf5f,#a98a2c)"></i><p>Brushed Oxford Gold</p></div>
+    <div class="fc"><i style="background:linear-gradient(135deg,#2a2a2a,#0d0d0d)"></i><p>Firecracker Black</p></div>
+    <div class="fc"><i style="background:linear-gradient(135deg,#b08a2a,#5e450c)"></i><p>Polished Classic Bronze</p></div>
+    <div class="fc"><i style="background:linear-gradient(135deg,#b01818,#4d0000)"></i><p>Polished Carbon Red</p></div>
+  </div>
+</div></section>
+
+<section id="how" class="how"><div class="wrap">
+  <h2>See it first</h2>
+  <div class="steps">
+    <div class="step"><span>01</span><h3>Upload a photo</h3><p>Any side view of your car.</p></div>
+    <div class="step"><span>02</span><h3>Pick a finish</h3><p>Four to choose from.</p></div>
+    <div class="step"><span>03</span><h3>See it fitted</h3><p>Then ask a dealer for a quote.</p></div>
+  </div>
+</div></section>
+
+<section class="last"><div class="wrap">
+  <h2>Your car. Our wheel.</h2>
+  <p>Takes under a minute. No sign-up.</p>
+  <button class="avacar-preview btn" data-styled="false" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU">See it on your car</button>
+</div></section>
+
+<footer><div class="wrap"><span>ZZ Test Co</span><span>Test site for xix3D. Not a real company.</span></div></footer>
+
+<div class="tt" id="tt"><div><b>Test tools</b><br>Visitor <code id="vid"></code><br><button id="reset" style="margin-top:6px">Start as a new visitor</button></div><button id="ttb">Test tools</button></div>
 <script>
   (function () {
-    var K = 'xix3d:visitor_id', el = document.getElementById('vid')
-    function show() { try { el.textContent = 'Visitor: ' + (localStorage.getItem(K) || 'not set yet').slice(0, 8) } catch (e) { el.textContent = '' } }
+    var K = 'xix3d:visitor_id', el = document.getElementById('vid'), tt = document.getElementById('tt')
+    function show() { try { el.textContent = (localStorage.getItem(K) || 'not set yet').slice(0, 8) } catch (e) { el.textContent = '' } }
+    document.getElementById('ttb').onclick = function () { tt.classList.toggle('open'); show() }
     document.getElementById('reset').onclick = function () { try { localStorage.removeItem(K) } catch (e) {} location.reload() }
-    show(); setInterval(show, 1500)
   })()
 </script>
 <script src="widget.js"></script>
