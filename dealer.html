@@ -26,16 +26,8 @@
   nav.links{display:flex;gap:24px;font-size:15px;font-weight:500;color:#2b2f36;margin-left:8px}
   nav.links a:hover{color:var(--acc)}
   .sp{flex:1}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 24px;border-radius:999px;border:0;background:var(--acc);color:#fff;font:600 15px Inter,sans-serif;cursor:pointer;transition:background .15s}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 24px;border-radius:999px;border:0;background:var(--acc);color:#fff;font:600 15px Inter,sans-serif;cursor:pointer;transition:background .15s}
   .btn:hover{background:var(--acc2)}
-  /* The studio's animated AI button: the one gradient allowed. */
-  .aibtn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:9px;height:52px;padding:0 28px;border-radius:999px;background:#0b0415;border:1px solid rgba(255,255,255,.42);box-shadow:0 8px 24px rgba(40,10,90,.32);color:#fff;font:700 15px Inter,sans-serif;cursor:pointer;white-space:nowrap;text-shadow:0 1px 6px rgba(0,0,0,.6);letter-spacing:0;text-transform:none}
-  .aibtn:hover{filter:brightness(1.12)}
-  .aibtn svg{width:18px;height:18px;flex:none}
-  .aibtn.sm{height:42px;padding:0 20px;font-size:14px}
-  .aibtn:before{content:"";position:absolute;inset:-45% -12%;z-index:-1;filter:blur(10px);background:radial-gradient(15% 60% at 14% 62%,#1257e8 0,rgba(18,87,232,0) 100%),radial-gradient(13% 55% at 38% 100%,#7fc6dc 0,rgba(127,198,220,0) 100%),radial-gradient(20% 80% at 68% 30%,#8a58c4 0,rgba(138,88,196,0) 100%),radial-gradient(11% 70% at 94% 70%,#c2441a 0,rgba(194,68,26,0) 100%);animation:aiflow 7s ease-in-out infinite alternate}
-  @keyframes aiflow{from{transform:translateX(-14%) scaleX(1.05)}to{transform:translateX(14%) scaleX(1.12)}}
-  @media (prefers-reduced-motion:reduce){.aibtn:before{animation:none}}
   .btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
   .btn.ghost:hover{background:rgba(255,255,255,.1)}
   .btn.sm{height:42px;padding:0 18px;font-size:14px}
@@ -102,8 +94,7 @@
     .wt b{font-size:20px}
     .steps{grid-template-columns:1fr}
     .visit .wrap{grid-template-columns:1fr}
-    .aibtn.sm{padding:0 14px;font-size:13px}
-    .logo{font-size:18px;white-space:nowrap;gap:8px}
+        .logo{font-size:18px;white-space:nowrap;gap:8px}
   }
 </style>
 </head>
@@ -113,7 +104,7 @@
   <a class="logo" href="#top"><i>D</i>Demo Test Shop</a>
   <nav class="links"><a href="#wheels">Wheels</a><a href="#brands">Brands</a><a href="#how">How it works</a><a href="#service">Service</a><a href="#visit">Visit</a></nav>
   <div class="sp"></div>
-  <button class="avacar-preview aibtn sm" data-styled="false" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjQ0NCwiY2F0YWxvZ3VlIjp0cnVlLCJpYXQiOjE3OTM5MTIyNjIsImV4cCI6MTgyNTQ0ODI2Mn0.uLlzDTY8eAjFvOsYDC_SfcpnxnBOl43XRwzqTbzX_QU"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.3L20 10l-5.8 1.7L12 18l-2.2-6.3L4 10l5.8-1.7z"/></svg>See it on your car</button>
+  <button class="avacar-preview" data-size="compact" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjQ0NCwiY2F0YWxvZ3VlIjp0cnVlLCJpYXQiOjE3OTM5MTIyNjIsImV4cCI6MTgyNTQ0ODI2Mn0.uLlzDTY8eAjFvOsYDC_SfcpnxnBOl43XRwzqTbzX_QU">See it on your car</button>
 </div></header>
 
 <div id="top" class="hero"><div class="wrap">
@@ -122,7 +113,7 @@
     <h1>See the wheels on your car first</h1>
     <p>Upload a photo of your car. Pick any wheel from our catalogue. See it fitted in seconds.</p>
     <div class="cta">
-      <button class="avacar-preview aibtn" data-styled="false" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjQ0NCwiY2F0YWxvZ3VlIjp0cnVlLCJpYXQiOjE3OTM5MTIyNjIsImV4cCI6MTgyNTQ0ODI2Mn0.uLlzDTY8eAjFvOsYDC_SfcpnxnBOl43XRwzqTbzX_QU"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.3L20 10l-5.8 1.7L12 18l-2.2-6.3L4 10l5.8-1.7z"/></svg>See it on your car</button>
+      <button class="avacar-preview" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjQ0NCwiY2F0YWxvZ3VlIjp0cnVlLCJpYXQiOjE3OTM5MTIyNjIsImV4cCI6MTgyNTQ0ODI2Mn0.uLlzDTY8eAjFvOsYDC_SfcpnxnBOl43XRwzqTbzX_QU">See it on your car</button>
       <a class="btn ghost" href="#wheels">Browse wheels</a>
     </div>
     <div class="facts"><div><b>320+</b>brands</div><div><b>12,000</b>wheels</div><div><b>Free</b>fitment check</div></div>
@@ -219,7 +210,7 @@
   <div>
     <h2>Visit the shop</h2>
     <p>1200 Example Street, Springfield<br>Mon to Sat, 8 to 6<br>(555) 010-2040</p>
-    <button class="avacar-preview aibtn" data-styled="false" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjQ0NCwiY2F0YWxvZ3VlIjp0cnVlLCJpYXQiOjE3OTM5MTIyNjIsImV4cCI6MTgyNTQ0ODI2Mn0.uLlzDTY8eAjFvOsYDC_SfcpnxnBOl43XRwzqTbzX_QU"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.3L20 10l-5.8 1.7L12 18l-2.2-6.3L4 10l5.8-1.7z"/></svg>See it on your car</button>
+    <button class="avacar-preview" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjQ0NCwiY2F0YWxvZ3VlIjp0cnVlLCJpYXQiOjE3OTM5MTIyNjIsImV4cCI6MTgyNTQ0ODI2Mn0.uLlzDTY8eAjFvOsYDC_SfcpnxnBOl43XRwzqTbzX_QU">See it on your car</button>
   </div>
   <div class="map" role="img" aria-label="Map"></div>
 </div></section>
@@ -231,7 +222,7 @@
   (function () {
     var K = 'xix3d:visitor_id', el = document.getElementById('vid'), tt = document.getElementById('tt')
     function show() { try { el.textContent = (localStorage.getItem(K) || 'not set yet').slice(0, 8) } catch (e) { el.textContent = '' } }
-    Array.prototype.forEach.call(document.querySelectorAll('.tryit'), function (b) { b.onclick = function () { var t = document.querySelector('.avacar-preview'); if (t) t.click() } })
+    Array.prototype.forEach.call(document.querySelectorAll('.tryit'), function (b) { b.onclick = function () { var t = document.querySelector('.avacar-btn-zeno'); if (t) t.click() } })
     document.getElementById('ttb').onclick = function () { tt.classList.toggle('open'); show() }
     document.getElementById('reset').onclick = function () { try { localStorage.removeItem(K) } catch (e) {} location.reload() }
   })()

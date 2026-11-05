@@ -21,17 +21,9 @@
   nav{display:flex;gap:28px;font-size:14px;color:#b4b7be}
   nav a:hover{color:#fff}
   .sp{flex:1}
-  .btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 28px;border-radius:2px;border:1px solid #fff;background:#fff;color:#0a0a0c;font:600 13px 'Space Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:all .18s}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 28px;border-radius:2px;border:1px solid #fff;background:#fff;color:#0a0a0c;font:600 13px 'Space Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:all .18s}
   .btn:hover{background:transparent;color:#fff}
   .btn.sm{height:42px;padding:0 20px;font-size:12px}
-  /* The studio's animated AI button: the one gradient allowed. */
-  .aibtn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:9px;height:52px;padding:0 28px;border-radius:999px;background:#0b0415;border:1px solid rgba(255,255,255,.42);box-shadow:0 8px 24px rgba(40,10,90,.32);color:#fff;font:700 15px 'Space Grotesk',sans-serif;cursor:pointer;white-space:nowrap;text-shadow:0 1px 6px rgba(0,0,0,.6);letter-spacing:0;text-transform:none}
-  .aibtn:hover{filter:brightness(1.12)}
-  .aibtn svg{width:18px;height:18px;flex:none}
-  .aibtn.sm{height:42px;padding:0 20px;font-size:14px}
-  .aibtn:before{content:"";position:absolute;inset:-45% -12%;z-index:-1;filter:blur(10px);background:radial-gradient(15% 60% at 14% 62%,#1257e8 0,rgba(18,87,232,0) 100%),radial-gradient(13% 55% at 38% 100%,#7fc6dc 0,rgba(127,198,220,0) 100%),radial-gradient(20% 80% at 68% 30%,#8a58c4 0,rgba(138,88,196,0) 100%),radial-gradient(11% 70% at 94% 70%,#c2441a 0,rgba(194,68,26,0) 100%);animation:aiflow 7s ease-in-out infinite alternate}
-  @keyframes aiflow{from{transform:translateX(-14%) scaleX(1.05)}to{transform:translateX(14%) scaleX(1.12)}}
-  @media (prefers-reduced-motion:reduce){.aibtn:before{animation:none}}
   .btn.out{background:transparent;color:#fff;border-color:#4a4c54;border-radius:999px}
   .btn.out:hover{border-color:#fff}
   .hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;min-height:calc(100vh - 72px);max-height:820px;padding-top:40px;padding-bottom:40px}
@@ -97,7 +89,7 @@
   <a class="logo" href="#top">ZZ Test Co</a>
   <nav><a href="#top">Wheels</a><a href="#finishes">Finishes</a><a href="#how">Fitment</a><a href="#top">Dealers</a><a href="#top">Support</a></nav>
   <div class="sp"></div>
-  <button class="avacar-preview aibtn sm" data-styled="false" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.3L20 10l-5.8 1.7L12 18l-2.2-6.3L4 10l5.8-1.7z"/></svg>See it on your car</button>
+  <button class="avacar-preview" data-size="compact" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU">See it on your car</button>
 </div></header>
 
 <div id="top" class="hero"><div class="wrap">
@@ -106,7 +98,7 @@
     <h1>TR04<br><em>Aero+ 1-Piece</em></h1>
     <p class="lead">Five spokes, forged in one piece. See it on your own car before you order.</p>
     <div class="cta">
-      <button class="avacar-preview aibtn" data-styled="false" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.3L20 10l-5.8 1.7L12 18l-2.2-6.3L4 10l5.8-1.7z"/></svg>See it on your car</button>
+      <button class="avacar-preview" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU">See it on your car</button>
       <a class="btn out" href="#finishes">All finishes</a>
     </div>
   </div>
@@ -142,7 +134,7 @@
 <section class="last"><div class="wrap">
   <h2>Your car. Our wheel.</h2>
   <p>Takes under a minute. No sign-up.</p>
-  <button class="avacar-preview aibtn" data-styled="false" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.3L20 10l-5.8 1.7L12 18l-2.2-6.3L4 10l5.8-1.7z"/></svg>See it on your car</button>
+  <button class="avacar-preview" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjgsIndoZWVsX2lkIjo1NTgsImlhdCI6MTc5MjA4ODI5MSwiZXhwIjoxODIzNjI0MjkxfQ.P800KlEP_K7tP2rCUsUTBTIh-1u9I_7IJn0GUCj6MpU">See it on your car</button>
 </div></section>
 
 <footer><div class="wrap"><span>ZZ Test Co</span><span>Test site for xix3D. Not a real company.</span></div></footer>
