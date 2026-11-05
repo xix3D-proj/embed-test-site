@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Demo Test Shop (dealer test)</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Helvetica,Arial,sans-serif;color:#1c1f2a;background:#f4f5f7}
+  header{background:#15171d;color:#fff;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+  header b{font-size:18px;letter-spacing:.04em}
+  header a{color:#aab0bd;font-size:14px;text-decoration:none}
+  .hero{max-width:900px;margin:0 auto;padding:56px 20px 24px}
+  h1{font-weight:300;font-size:44px;letter-spacing:.02em;margin:0 0 12px}
+  p{line-height:1.55;color:#555;margin:0 0 20px}
+  .test{max-width:900px;margin:0 auto 40px;padding:0 20px}
+  .box{background:#fff;border:1px solid #dfe2e8;border-radius:14px;padding:18px 20px}
+  .box h2{font-size:15px;margin:0 0 10px}
+  .box ol{margin:0 0 14px;padding-left:20px;line-height:1.7;color:#444;font-size:14px}
+  .box small{color:#777}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .reset{border:1px solid #c9ced8;background:#fff;border-radius:999px;padding:9px 16px;font-size:14px;cursor:pointer}
+  .reset:hover{background:#f0f2f6}
+  #vid{font-family:Consolas,monospace;font-size:12px;color:#777}
+</style>
+</head>
+<body>
+<header><b>DEMO TEST SHOP</b><a href="index.html">All test pages</a></header>
+<section class="hero">
+  <h1>See any wheel on your car</h1>
+  <p>Dealer embed (code 616). Visitors pick from the shop's whole catalogue: about 320 brands.</p>
+  <button class="avacar-preview" data-jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW51ZmFjdHVyZXJfaWQiOjQ0NCwiY2F0YWxvZ3VlIjp0cnVlLCJpYXQiOjE3OTM5MTIyNjIsImV4cCI6MTgyNTQ0ODI2Mn0.uLlzDTY8eAjFvOsYDC_SfcpnxnBOl43XRwzqTbzX_QU"></button>
+</section>
+<section class="test">
+  <div class="box">
+    <h2>What to try</h2>
+    <ol>
+      <li>Open the button, upload <b>test-car.jpg</b> (in this folder) or your own car photo.</li>
+      <li>Pick a brand, search a wheel, pick it and a finish, press Render.</li>
+      <li>Press More wheels, pick a wheel from another brand, render again.</li>
+      <li>Press Request quote. It goes to a test inbox, so use any name and email.</li>
+      <li>Keep rendering until you reach the limit (5 per device).</li>
+    </ol>
+    <div class="row">
+      <button class="reset" id="reset">Start as a new visitor</button>
+      <span id="vid"></span>
+    </div>
+    <p><small>Every render is a real render and uses a real credit on the test shop. This page talks to staging, never to the live site.</small></p>
+  </div>
+</section>
+<script>
+  (function () {
+    var K = 'xix3d:visitor_id', el = document.getElementById('vid')
+    function show() { try { el.textContent = 'Visitor: ' + (localStorage.getItem(K) || 'not set yet').slice(0, 8) } catch (e) { el.textContent = '' } }
+    document.getElementById('reset').onclick = function () { try { localStorage.removeItem(K) } catch (e) {} location.reload() }
+    show(); setInterval(show, 1500)
+  })()
+</script>
+<script src="widget.js"></script>
+</body>
+</html>
