@@ -8,6 +8,14 @@
   if (window.__xwDebug) return
   window.__xwDebug = true
 
+  // ?reset in the address forgets this device, so the per-device render limit starts again (test pages only).
+  try {
+    if (/[?&]reset/.test(location.search)) {
+      localStorage.removeItem('xix3d:visitor_id')
+      history.replaceState(null, '', location.pathname + location.search.replace(/([?&])reset(=[^&]*)?&?/, '$1').replace(/[?&]$/, '') + location.hash)
+    }
+  } catch (e) {}
+
   var KEY = 'xwdbg:open'
   var rows = []        // renders, newest first
   var calls = []       // open-time calls (validate, decode, catalogue, open check, finishes)
