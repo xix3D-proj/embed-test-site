@@ -70,10 +70,10 @@
   function draw() {
     var hc = hitCount()
     tab.textContent = 'DEBUG' + (rows.length ? ' · ' + rows.length : '')
-    var html = '<header><span>Render debug</span><span><button id="xwdbg-clear">Clear</button><button id="xwdbg-x">Close</button></span></header><div class="body">'
+    var html = '<header><span>Render debug</span><span><button id="xwdbg-new" title="Forget this device so the per-device limit starts again (test sites only)">New device</button><button id="xwdbg-clear">Clear</button><button id="xwdbg-x">Close</button></span></header><div class="body">'
 
     html += '<h4>Mask reuse</h4><div class="card"><div class="sum"><div><b class="' + (hc.h ? 'hit' : 'k') + '">' + hc.h + '</b> reused</div><div><b>' + (hc.n - hc.h) + '</b> built fresh</div><div><b>' + rows.length + '</b> renders</div></div>' +
-      '<div class="k">A reused mask skips the first image call, so that render costs one image call instead of two.</div></div>'
+      '<div class="k">Hit the render limit (5 per device)? Press New device above: this page forgets you and the count starts again. It only affects these test pages.</div>' + '<div class="k">A reused mask skips the first image call, so that render costs one image call instead of two.</div></div>'
 
     html += '<h4>Renders</h4>'
     if (!rows.length) html += '<div class="k">No render yet. Run one and it appears here.</div>'
@@ -99,6 +99,8 @@
     panel.innerHTML = html
     panel.className = open ? 'open' : ''
     var cl = panel.querySelector('#xwdbg-clear'), x = panel.querySelector('#xwdbg-x')
+    var nd = panel.querySelector('#xwdbg-new')
+    if (nd) nd.onclick = function () { try { localStorage.removeItem('xix3d:visitor_id') } catch (e) {} location.reload() }
     if (cl) cl.onclick = function () { rows = []; calls = []; draw() }
     if (x) x.onclick = function () { setOpen(false) }
   }
