@@ -8,12 +8,10 @@
   if (window.__xwDebug) return
   window.__xwDebug = true
 
-  // ?reset in the address forgets this device, so the per-device render limit starts again (test pages only).
+  // Every load of a test page is a fresh device, so the per-device render limit never carries over
+  // (test pages only). Add ?keep to the address to keep the device and test the limit itself.
   try {
-    if (/[?&]reset(&|=|$)/.test(location.search)) {
-      localStorage.removeItem('xix3d:visitor_id')
-      history.replaceState(null, '', location.pathname + location.search.replace(/([?&])reset(=[^&]*)?&?/, '$1').replace(/[?&]$/, '') + location.hash)
-    }
+    if (!/[?&]keep(&|=|$)/.test(location.search)) localStorage.removeItem('xix3d:visitor_id')
   } catch (e) {}
 
   var KEY = 'xwdbg:open'
